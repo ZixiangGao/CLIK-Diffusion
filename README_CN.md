@@ -1,5 +1,7 @@
 # CLIK-Diffusion: 临床知识引导的牙齿矫正扩散模型
 
+**📖 [任务执行完整指南](TASK_GUIDE_CN.md)** | **[English](README.md)**
+
 [Yulong Dou](https://douyl.github.io/), [Han Wu](https://hanwu.website/), [Changjian Li](https://enigma-li.github.io/), [Chen Wang](https://www.igiplab.com/members/166), Tong Yang, Min Zhu, [Dinggang Shen](https://idea.bme.shanghaitech.edu.cn/), and [Zhiming Cui](https://shanghaitech-impact.github.io/).
 
 ### [论文](https://doi.org/10.1016/j.media.2025.103746) | [数据集](https://github.com/ShanghaiTech-IMPACT/CLIK-Diffusion/blob/main/Data_Access_Agreement.pdf)
