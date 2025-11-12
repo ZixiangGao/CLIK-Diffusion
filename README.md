@@ -1,5 +1,7 @@
 # CLIK-Diffusion: Clinical Knowledge-informed Diffusion Model for Tooth Alignment
 
+**[English](README.md) | [中文](README_CN.md)**
+
 [Yulong Dou](https://douyl.github.io/), [Han Wu](https://hanwu.website/), [Changjian Li](https://enigma-li.github.io/), [Chen Wang](https://www.igiplab.com/members/166), Tong Yang, Min Zhu, [Dinggang Shen](https://idea.bme.shanghaitech.edu.cn/), and [Zhiming Cui](https://shanghaitech-impact.github.io/).
 
 ### [Paper](https://doi.org/10.1016/j.media.2025.103746) | [Dataset](https://github.com/ShanghaiTech-IMPACT/CLIK-Diffusion/blob/main/Data_Access_Agreement.pdf)
@@ -28,8 +30,29 @@ pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113
 pip install -r requirements.txt
 ```
 
-### Testing
-We now only provide case-by-case code for testing. To test our model ——
+### Quick Demo (Recommended)
+We provide a demo script that simplifies the testing process with environment checks:
+
+```bash
+# Run with default settings (uses patient 275)
+python demo.py
+
+# Run with custom patient and visualization
+python demo.py --patient 275 --visualize
+
+# Get help for all options
+python demo.py --help
+```
+
+The demo script will:
+- Check your Python environment and dependencies
+- Verify that all model checkpoints are downloaded
+- Confirm input data exists
+- Run the inference automatically
+- Display the results
+
+### Manual Testing
+We also provide case-by-case code for manual testing. To test our model ——
 * First download both checkpoints of landmark detection network and checkpoints of diffusion model from https://drive.google.com/drive/folders/1o9tVJ6p8Jbad3gu0ZUkX0tE5dp7Vkh9g?usp=sharing.
 * Then put all five downloaded checkpoints into [`./Code/checkpoint`](./Code/checkpoint).
 * We have prepared some data samples for you to start a quick test. The pre-orthodontic tooth meshes are stored in [`./Data`](./Data).
